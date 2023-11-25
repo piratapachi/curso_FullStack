@@ -1,0 +1,78 @@
+html {
+    font-size: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #343a3f;
+    background-image: url("/images/22.jpg");
+    background-size: cover;
+  }
+
+body {
+    width: 1100px;
+    height: 3000px;
+    margin: 0 auto;
+    background-color: #2c272c;
+    padding: 0 20px 20px 20px;
+
+  }
+
+button {
+      background-color: rgb(25, 15, 41);
+}
+
+.intro {
+    text-align: center;
+
+}
+
+
+  nav {    
+    background-color: rgb(25, 15, 41);
+    color: white;
+    padding: 2px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;
+    color: rgb(171, 226, 43);
+    font-size: 60px;
+    text-align: center;
+  }
+
+h2,
+h3  {
+    color: aliceblue;
+    text-align: center;
+
+}
+
+p {
+    color:rgb(171, 226, 43) ;
+
+}
+
+ul {
+    color:rgba(119, 0, 255, 0.836);
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    list-style: square;
+}
+
+ol {
+  color:rgba(119, 0, 255, 0.836);
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+
+}
+
+a[href] {
+        color:rgba(119, 0, 255, 0.836);
+}
+
+a:hover {
+        color: rgb(212, 0, 0);
+}

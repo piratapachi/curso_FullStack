@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let number = Number(prompt('Escribe un numero cualquiera'));
+        let suma = number;
+
+        while(suma < 51) {
+          number = Number(prompt('Escribe un numero cualquiera'));
+
+          if(suma + number < 51) {
+            suma += number;
+
+          } else {
+            alert('Te has pasado, llevas una sumatorio de: ' + suma);
+          }
+
+          if(suma === 50) {
+            break;
+          }
+        }
+
+        alert('La suma total es: ' + suma);
+
+    </script>
+</body>
+</html>

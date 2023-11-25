@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="text" id="value"  placeholder="Dime la posición del día que quieres del 0 -6"/>
+    <button id="button">Click</button>
+
+    <script>
+
+        let days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+
+        
+        function calendar() {
+            let daySelected = Number(document.getElementById("value").value)
+            alert(days[daySelected])
+        }
+        
+        document.getElementById("button").addEventListener('click', calendar);
+        
+    </script>
+
+</body>
+</html>

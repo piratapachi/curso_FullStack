@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="name" value="Fiesta" id="Fiesta">Ford Fiesta
+    <input type="radio" name="name" value="Focus" id="Focus">Ford Focus
+    <p id="descuento">¿Cuál será tu descuento?</p>
+
+    <script>
+
+        document.getElementById('Fiesta').addEventListener("change", ()=> {
+            if (document.getElementById("Fiesta").checked) {
+            document.getElementById("descuento").innerHTML = "DESCUENTO 5% PA TI"
+        }
+        })
+
+        document.getElementById('Focus').addEventListener("change", ()=> {
+            if (document.getElementById("Focus").checked) {
+            document.getElementById("descuento").innerHTML = "DESCUENTO 10% PA TI"
+        }
+        })
+
+
+    </script>
+</body>
+</html>

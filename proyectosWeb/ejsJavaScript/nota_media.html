@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+
+    <script>
+
+    let nota1 = Number(prompt("nota1"));
+    let nota2 = Number(prompt("nota2"));
+    let nota3 = Number(prompt("nota3"));
+
+    function notaFinal() {
+        return (nota1 + nota2 + nota3)/3
+    }
+
+
+    if (notaFinal()>=5) {
+        console.log(notaFinal())
+            document.getElementById("parrafo").innerHTML = "Aprobado" + notaFinal()
+            }
+
+        else if (notaFinal()<5) {
+            document.getElementById("parrafo").innerHTML = "Suspenso " + notaFinal()
+    }
+
+    </script>
+</body>
+</html>
