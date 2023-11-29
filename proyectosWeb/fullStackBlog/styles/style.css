@@ -76,3 +76,7 @@ a[href] {
 a:hover {
         color: rgb(212, 0, 0);
 }
+
+label {
+  display: block;
+}
