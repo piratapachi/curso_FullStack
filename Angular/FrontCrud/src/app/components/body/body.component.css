@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    inset: 0;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos adicionales para resaltar el campo inválido */
+input:invalid {
+    border-color: #e74c3c;
+}
+
+/* Estilos para resaltar el campo válido */
+input:valid {
+    border-color: #2ecc71;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.editar, .borrar {
+    text-decoration: none;
+    padding: 2px 6px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-right: 4px;
+    color: #333;
+}
+
+.editar:hover, .borrar:hover {
+    background-color: #e0e0e0;
+}
+
+dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
