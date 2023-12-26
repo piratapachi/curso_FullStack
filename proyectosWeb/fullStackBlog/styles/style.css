@@ -4,6 +4,7 @@ html {
     background-color: #343a3f;
     background-image: url("/images/22.jpg");
     background-size: cover;
+    /* cursor: url(/proyectosWeb/fullStackBlog/images/cursor.png), pointer; */
   }
 
 body {
@@ -12,7 +13,6 @@ body {
     margin: 0 auto;
     background-color: #2c272c;
     padding: 0 20px 20px 20px;
-
   }
 
 button {

@@ -6,7 +6,7 @@ import { Clientes } from '../models/Clientes';
   providedIn: 'root'
 })
 export class ClientesService {
-  rutaGlobal = "http://localhost:3306/banco/Clientes"
+  rutaGlobal = "http://localhost:8080/banco/clientes"
   constructor(private http: HttpClient) { }
 
   //Crear cliente
@@ -31,8 +31,8 @@ export class ClientesService {
 
   //Eliminar cliente
   eliminarCliente(numDoc: number){
-    return this.http.post<Boolean>(this.rutaGlobal + numDoc, {
-      observe: "responde"
+    return this.http.delete<Boolean>(this.rutaGlobal + numDoc, {
+      observe: "response"
     })
   }
 }

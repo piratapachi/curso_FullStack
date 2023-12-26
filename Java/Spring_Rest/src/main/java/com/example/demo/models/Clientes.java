@@ -1,13 +1,14 @@
 package com.example.demo.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
 
 @Entity
+@Table(name="clientes")
 public class Clientes {
 	
 	@Id
+	@GeneratedValue
 	@Column
 	private Long numDoc;
 	

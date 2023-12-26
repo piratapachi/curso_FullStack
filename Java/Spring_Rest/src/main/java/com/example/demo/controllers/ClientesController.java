@@ -2,6 +2,7 @@ package com.example.demo.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,8 +14,8 @@ import com.example.demo.models.Clientes;
 import com.example.demo.services.ClientesService;
 
 @RestController
-@RequestMapping("/clientes")
-@CrossOrigin(origins = {"http://localhost:3306/Clientes"})
+@RequestMapping("/banco/clientes")
+@CrossOrigin(origins = {"localhost:4200"})
 public class ClientesController {
 	@Autowired
 	private ClientesService clientesService;
@@ -34,8 +35,8 @@ public class ClientesController {
 		return this.clientesService.modifyCliente(cliente);
 	}
 	
-	@PostMapping(value = "/{id}")
-	public Boolean deleteCliente(@PathVariable(value = "id")Long id) {
-		return this.clientesService.deleteCliente(id);
+	@DeleteMapping(value = "/{numDoc}")
+	public Boolean deleteCliente(@PathVariable(value = "numDoc")Long numDoc) {
+		return this.clientesService.deleteCliente(numDoc);
 	}
 }
